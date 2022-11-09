@@ -6,11 +6,19 @@
 
 @layer components {
   .sticky-col {
-    @apply text-left font-normal lg:hidden sticky w-[210px] min-w-[210px] max-w-[210px] left-0 z-20  h-[42px];
+    @apply text-left font-normal lg:hidden sticky w-[210px] min-w-[210px] max-w-[210px] left-[-1px] z-20  h-[42px];
   }
 
   .sticky-col-2 {
-    @apply text-left font-normal lg:hidden sticky w-[210px] min-w-[210px] max-w-[210px] left-0 z-20 h-[42px];
+    @apply text-left font-normal lg:hidden sticky w-[210px] min-w-[210px] max-w-[210px] left-[-1px] z-20 h-[42px];
+  }
+
+  .kyc-badge {
+    @apply bg-[#00AA72] py-[3px] px-[6px] text-[10px] ml-[3px] text-[#fff] items-center inline-flex rounded-md justify-center whitespace-nowrap gap-1;
+  }
+
+  .audit-badge {
+    @apply bg-[#21A2FF] py-[3px] px-[6px] text-[10px] ml-[3px] text-[#fff] items-center inline-flex rounded-md justify-center whitespace-nowrap gap-1;
   }
 }
 

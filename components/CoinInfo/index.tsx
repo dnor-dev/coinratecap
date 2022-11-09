@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowUp } from '../Icons';
 
 const CoinInfo = () => {
   return (
@@ -58,8 +57,9 @@ const CoinInfo = () => {
         <div className="details border-b border-[#313E56] lg:text-[16px] md:text-[16px] text-[14px] font-normal flex items-center justify-between py-[8px]">
           <p className="text-[#787A8D]">Votes Today:</p>
           <div>
-            <p className="text-right leading-none flex items-center">
-              <ArrowUp /> <span className="text-[#00AA72]">0</span>
+            <p className="text-right leading-none text-[#00AA72] flex items-center gap-1">
+              <i className="fa fa-caret-up" aria-hidden="true"></i>
+              <span>0</span>
             </p>
           </div>
         </div>
