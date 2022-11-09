@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowUp, Favorites } from '../Icons';
+import { useRouter } from 'next/router';
 
 const Table = () => {
+  const { push } = useRouter();
   return (
     <div className="flex w-full overflow-x-scroll">
       <table className="table-auto w-full border-collapse">
@@ -17,9 +19,15 @@ const Table = () => {
                 <div className="linear-grad border-l border-[#252D3D] w-[27px]"></div>
               </div>
             </th>
-            <th className="p-4 pl-8 text-left font-normal">#</th>
-            <th className="p-4 pl-8 text-left font-normal">Coin</th>
-            <th className="p-4 pl-8 text-left font-normal">Name</th>
+            <th className="p-4 pl-8 text-left font-normal hidden lg:table-cell md:table-cell">
+              #
+            </th>
+            <th className="p-4 pl-8 text-left font-normal hidden lg:table-cell md:table-cell">
+              Coin
+            </th>
+            <th className="p-4 pl-8 text-left font-normal hidden lg:table-cell md:table-cell">
+              Name
+            </th>
             <th className="p-4 pl-8 text-left font-normal">Badges</th>
             <th className="p-4 pl-8 text-left font-normal">Chain</th>
             <th className="p-4 pl-8 text-left font-normal">Market Cap</th>
@@ -33,7 +41,10 @@ const Table = () => {
           </tr>
         </thead>
         <tbody className="whitespace-nowrap ">
-          <tr className="cursor-pointer border-b border-[#252D3D]">
+          <tr
+            className="cursor-pointer border-b border-[#252D3D]"
+            onClick={() => push('/coins/123')}
+          >
             <td className="sticky-col-2">
               <div className="flex justify-between h-full">
                 <div className="flex gap-2 bg-[#1e2635] h-full w-full self-center items-center text-[10px] pl-4">
@@ -54,8 +65,10 @@ const Table = () => {
                 <div className="linear-grad border-l border-[#252D3D] w-[27px]"></div>
               </div>
             </td>
-            <td className="p-4 pl-8 text-left">1</td>
-            <td className="p-4 pl-8 text-left">
+            <td className="p-4 pl-8 text-left hidden lg:table-cell md:table-cell">
+              1
+            </td>
+            <td className="p-4 pl-8 text-left hidden lg:table-cell md:table-cell">
               <Image
                 src="/coins.png"
                 alt="coins-image"
@@ -63,7 +76,7 @@ const Table = () => {
                 height={50}
               />
             </td>
-            <td className="p-4 pl-8 text-left">
+            <td className="p-4 pl-8 text-left hidden lg:table-cell md:table-cell">
               <div className="flex-col">
                 <h5 className="font-bold">JWT</h5>
                 <p className="text-[#868D9A]">JamesWebb Token</p>
