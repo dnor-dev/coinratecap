@@ -14,11 +14,11 @@
   }
 
   .kyc-badge {
-    @apply bg-[#00AA72] py-[3px] px-[6px] text-[10px] ml-[3px] text-[#fff] items-center inline-flex rounded-md justify-center whitespace-nowrap gap-1;
+    @apply bg-[#00AA72] py-[3px] px-[6px] text-[8px] ml-[3px] text-[#fff] items-center inline-flex rounded-md justify-center whitespace-nowrap gap-1;
   }
 
   .audit-badge {
-    @apply bg-[#21A2FF] py-[3px] px-[6px] text-[10px] ml-[3px] text-[#fff] items-center inline-flex rounded-md justify-center whitespace-nowrap gap-1;
+    @apply bg-[#21A2FF] py-[3px] px-[6px] text-[8px] ml-[3px] text-[#fff] items-center inline-flex rounded-md justify-center whitespace-nowrap gap-1;
   }
 }
 
