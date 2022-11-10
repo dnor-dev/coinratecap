@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 const Table = () => {
   const { push } = useRouter();
   return (
-    <div className="flex w-full lg:overflow-x-hidden overflow-x-scroll">
+    <div className="flex w-full lg:overflow-x-visible overflow-x-scroll">
       <table className="table-auto w-full border-collapse">
         <thead className="bg-[#151B26] w-full h-[61px] text-[14px] text-[#4F596D]">
           <tr className="whitespace-nowrap text-[12px]">
